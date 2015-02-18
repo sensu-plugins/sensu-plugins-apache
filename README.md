@@ -1,18 +1,15 @@
-## Sensu-Plugins-disk-checks
+## Sensu-Plugins-apache
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-apache.svg?branch=master)][1]
-[![Gem Version](https://badge.fury.io/rb/sensu-plugins-apache.svg)][2]
-[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/gpa.svg)][3]
-[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/coverage.svg)][4]
-[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-apache.svg)][5]
+[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-apache.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-apache)
+[![Gem Version](https://badge.fury.io/rb/sensu-plugins-apache.svg)](http://badge.fury.io/rb/sensu-plugins-apache)
+[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
+[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
+[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-apache.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-apache)
 
 ## Functionality
 
 ## Files
- *
- *
- *
- *
+ * bin/metrics-apache-graphite
 
 ## Usage
 
@@ -41,7 +38,7 @@ Using the Sensu **sensu_gem** LWRP
 ```
 sensu_gem 'sensu-plugins-apache' do
   options('--prerelease')
-  version '0.0.1.alpha.4'
+  version '0.0.1'
 end
 ```
 
@@ -49,14 +46,8 @@ Using the Chef **gem_package** resource
 ```
 gem_package 'sensu-plugins-apache' do
   options('--prerelease')
-  version '0.0.1.alpha.4'
+  version '0.0.1'
 end
 ```
 
 ## Notes
-
-[1]:[https://travis-ci.org/sensu-plugins/sensu-plugins-apache]
-[2]:[http://badge.fury.io/rb/sensu-plugins-apache]
-[3]:[https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache]
-[4]:[https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache]
-[5]:[https://gemnasium.com/sensu-plugins/sensu-plugins-apache]
