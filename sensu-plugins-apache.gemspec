@@ -31,13 +31,13 @@ Gem::Specification.new do |s|
   s.platform               = ruby
   s.required_ruby_version  = '>= 1.9.3'
 
-  s.add_development_dependency 'codeclimate-test-reporter'
-  s.add_development_dependency 'rubocop' '~> 0.17.0'
-  s.add_development_dependency 'rspec' '~> 3.1'
-  s.add_development_dependency 'bundler' '~> 1.7'
-  s.add_development_dependency 'rake' '~> 10.0'
-  s.add_development_dependency 'github-markup'
-  s.add_development_dependency 'redcarpet'
-  s.add_development_dependency 'yard'
-  s.add_development_dependency 'pry'
-end
+  s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4.6'
+  s.add_development_dependency 'rubocop', '~> 0.17.0'
+  s.add_development_dependency 'rspec', '~> 3.1'
+  s.add_development_dependency 'bundler', '~> 1.7'
+  s.add_development_dependency 'rake', '~> 10.0'
+  s.add_development_dependency 'github-markup', '1.3.3'
+  s.add_development_dependency 'redcarpet', '~> 3.2.2'
+  s.add_development_dependency 'yard', '~> 0.8.7.6'
+  s.add_development_dependency 'pry', '~> 0.10.1'
+  end
