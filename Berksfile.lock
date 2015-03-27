@@ -1,5 +1,6 @@
 DEPENDENCIES
   apache2 (~> 3.0.1)
+  apt
   plugins-dev
     path: ../GIR/cookbooks/plugins-dev
   yum (~> 3.5.3)
@@ -11,6 +12,7 @@ GRAPH
   apache2 (3.0.1)
     iptables (>= 0.0.0)
     logrotate (>= 0.0.0)
+  apt (2.7.0)
   iptables (0.14.1)
   logrotate (1.9.1)
   plugins-dev (0.1.0)
