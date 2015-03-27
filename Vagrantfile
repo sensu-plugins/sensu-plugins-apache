@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
 
   config.vm.provision "chef_zero" do |chef|
-    chef.roles_path = '../GIR/cookbooks/roles'
+    chef.roles_path = '../GIR/roles'
     chef.add_role('base')
     chef.add_recipe 'apache2'
   end
