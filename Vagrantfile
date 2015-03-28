@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = '2'
 
 # Read in the configuration file for the vagrant environment
 config_file = JSON.parse(File.read('../GIR/config/vagrant_config.json'))
-vagrant_config = configs['config']
+vagrant_config = config_file['config']
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Standard configurtaion details
@@ -64,10 +64,33 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define 'freebsd92' do |bsd9|
-    bsd9.vm.box = 'chef/freebsd-9.2'
+    bsd9.vm.guest = :freebsd
+    bsd9.ssh.shell = '/bin/sh'
+    bsd9.vm.box = vagrant_config['bsd9']['box']
+
+    # Use NFS as a shared folder
+    bsd9.vm.synced_folder ".", "/vagrant", type: 'rsync'
+    bsd9.vm.provision 'chef_zero' do |chef|
+      chef.synced_folder_type = 'rsync'
+      chef.roles_path = vagrant_config['bsd10']['role_path']
+      vagrant_config['bsd9']['role'].each do |r|
+       chef.add_role(r)
+      end
+    end
   end
 
   config.vm.define 'freebsd10' do |bsd10|
-    bsd10.vm.box = 'chef/freebsd-10.0'
+    bsd10.vm.guest = :freebsd
+    bsd10.vm.box = vagrant_config['bsd10']['box']
+
+    # Use NFS as a shared folder
+    bsd10.vm.synced_folder ".", "/vagrant", type: 'rsync'
+    bsd10.vm.provision 'chef_zero' do |chef|
+      chef.synced_folder_type = 'rsync'
+      chef.roles_path = vagrant_config['bsd10']['role_path']
+      vagrant_config['bsd10']['role'].each do |r|
+       chef.add_role(r)
+      end
+    end
   end
 end
