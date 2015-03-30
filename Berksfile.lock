@@ -1,21 +1,35 @@
 DEPENDENCIES
-  apache2 (~> 3.0.1)
-  apt
+  apt (~> 2.7.0)
+  ark (~> 0.9.0)
+  build-essential
+  chruby (~> 0.2.2)
+  freebsd (~> 0.3.0)
   plugins-dev
     path: ../GIR/cookbooks/plugins-dev
+  ruby_build (~> 0.8.0)
   yum (~> 3.5.3)
   yum-centos (~> 0.4.0)
   yum-epel (~> 0.6.0)
   yum-repoforge (~> 0.5.0)
 
 GRAPH
-  apache2 (3.0.1)
-    iptables (>= 0.0.0)
-    logrotate (>= 0.0.0)
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
   apt (2.7.0)
-  iptables (0.14.1)
-  logrotate (1.9.1)
-  plugins-dev (0.1.0)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (2.2.2)
+  chef_handler (1.1.6)
+  chruby (0.2.2)
+    ark (>= 0.0.0)
+    ruby_build (>= 0.0.0)
+  freebsd (0.3.0)
+  plugins-dev (0.0.1)
+    chruby (>= 0.0.0)
+  ruby_build (0.8.0)
+  windows (1.36.6)
+    chef_handler (>= 0.0.0)
   yum (3.5.3)
   yum-centos (0.4.0)
     yum (~> 3.0)
