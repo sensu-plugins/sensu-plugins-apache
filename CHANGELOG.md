@@ -1,15 +1,11 @@
-#### 0.0.1.alpha.1
+#Change Log
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-* identical functionality to community repo
+This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
-#### 0.0.1.alpha.2
+## Unreleased][unreleased]
 
-* add chef integration for development env
-* clean codebase to allow all tests to pass
-* pin development dependencies
+## 0.0.1 - 2015-04-21
 
-#### 0.0.1.alpha.3
-
-* add chef-zero as a provisioner for Vagrantfile
-* add Berkfile for use by vagrant if needed
-* add Vagrant boxes for Cent[5,6,7], FreeBSD[9.2,10.1], Ubuntu[14.04]
+### Added
+- initial release

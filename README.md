@@ -5,49 +5,17 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-apache.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-apache)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-apache](https://codeship.com/projects/52bea8a0-cd19-0132-e31b-2698d59c4ad3/status?branch=master)](https://codeship.com/projects/76223)
 
 ## Functionality
 
 ## Files
- * bin/metrics-apache-graphite
+ * bin/metrics-apache-graphite.rb
 
 ## Usage
 
 ## Installation
 
-Add the public key (if you haven’t already) as a trusted certificate
-
-```
-gem cert --add <(curl -Ls https://raw.githubusercontent.com/sensu-plugins/sensu-plugins.github.io/master/certs/sensu-plugins.pem)
-gem install sensu-plugins-apache -P MediumSecurity
-```
-
-You can also download the key from /certs/ within each repository.
-
-#### Rubygems
-
-`gem install sensu-plugins-apache`
-
-#### Bundler
-
-Add *sensu-plugins-disk-checks* to your Gemfile and run `bundle install` or `bundle update`
-
-#### Chef
-
-Using the Sensu **sensu_gem** LWRP
-```
-sensu_gem 'sensu-plugins-apache' do
-  options('--prerelease')
-  version '0.0.1'
-end
-```
-
-Using the Chef **gem_package** resource
-```
-gem_package 'sensu-plugins-apache' do
-  options('--prerelease')
-  version '0.0.1'
-end
-```
+[Installation and Setup](https://github.com/sensu-plugins/documentation/blob/master/user_docs/installation_instructions.md)
 
 ## Notes
