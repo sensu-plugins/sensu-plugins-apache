@@ -1,4 +1,5 @@
-lib = File.expand_path('../lib', __FILE__)
+PROJECTDIR = File.expand_path( '.')
+lib = File.expand_path("#{ PROJECTDIR }/lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
@@ -22,7 +23,7 @@ Gem::Specification.new do |s|
                                'development_status' => 'unmaintained',
                                'production_status'  => 'unstable - testing reccomended'
                                }
-  s.name                   = 'sensu-plugins-sensu-plugins-apache'
+  s.name                   = 'sensu-plugins-apache'
   s.platform               = Gem::Platform::RUBY
   s.require_paths          = ['lib']
   s.required_ruby_version  = '>= 1.9.3'
