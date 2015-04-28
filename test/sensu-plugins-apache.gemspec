@@ -1,5 +1,5 @@
-PROJECTDIR = File.expand_path( '.')
-lib = File.expand_path("#{ PROJECTDIR }/lib", __FILE__)
+project_dir = File.expand_path( '.')
+lib = File.expand_path("#{ project_dir }/lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'

@@ -1,5 +1,5 @@
-PROJECTDIR = File.expand_path( '.')
-lib = File.expand_path("#{ PROJECTDIR }/lib", __FILE__)
+project_dir = File.expand_path( '.')
+lib = File.expand_path("#{ project_dir }/lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
@@ -7,7 +7,7 @@ require 'date'
 if RUBY_VERSION < '2.0.0'
   require 'sensu-plugins-apache'
 else
-  require_relative 'lib/sensu-plugins-apache'
+  require_relative "#{ PROJECTDIR }/lib/sensu-plugins-apache"
 end
 
 pvt_key = '~/.ssh/gem-private_key.pem'
