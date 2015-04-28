@@ -7,7 +7,7 @@ require 'date'
 if RUBY_VERSION < '2.0.0'
   require 'sensu-plugins-apache'
 else
-  require_relative "#{ PROJECTDIR }/lib/sensu-plugins-apache"
+  require_relative "#{ project_dir }/lib/sensu-plugins-apache"
 end
 
 pvt_key = '~/.ssh/gem-private_key.pem'
