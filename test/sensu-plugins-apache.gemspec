@@ -1,4 +1,4 @@
-project_dir = File.expand_path( '.')
+project_dir = File.expand_path( '../')
 lib = File.expand_path("#{ project_dir }/lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
