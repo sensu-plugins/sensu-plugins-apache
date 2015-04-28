@@ -7,7 +7,7 @@ require 'date'
 if RUBY_VERSION < '2.0.0'
   require 'sensu-plugins-apache'
 else
-  require_relative 'lib/sensu-plugins-apache'
+  require_relative "#{ PROJECTDIR }/lib/sensu-plugins-apache"
 end
 
 Gem::Specification.new do |s|
