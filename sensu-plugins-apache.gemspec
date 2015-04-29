@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
   s.summary                = 'Sensu plugins for the apache webserver'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsApache::VERSION
+  s.version                = SensuPluginsApache::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
 
