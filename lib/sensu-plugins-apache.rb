@@ -1,14 +1,7 @@
-require 'sensu-plugins-apache/version'
-
-# Load the defaults
-
 #
-# Default class
+# Set gem version
 #
 module SensuPluginsApache
-  class << self
-  end
-
-  class << self
-  end
+  # Gem version
+  VERSION = '0.0.0'
 end
