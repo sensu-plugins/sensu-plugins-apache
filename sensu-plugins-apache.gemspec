@@ -1,13 +1,11 @@
-project_dir = File.expand_path( '.')
-lib = File.expand_path("#{ project_dir }/lib", __FILE__)
+lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
 require 'date'
 
 if RUBY_VERSION < '2.0.0'
   require 'sensu-plugins-apache'
 else
-  require_relative "#{ project_dir }/lib/sensu-plugins-apache"
+  require_relative 'lib/sensu-plugins-apache'
 end
 
 pvt_key = '~/.ssh/gem-private_key.pem'
@@ -38,7 +36,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
 
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
-  s.add_development_dependency 'rubocop',                   '0.30.0'
+  s.add_development_dependency 'rubocop',                   '~> 0.30'
   s.add_development_dependency 'rspec',                     '~> 3.1'
   s.add_development_dependency 'bundler',                   '~> 1.7'
   s.add_development_dependency 'rake',                      '~> 10.0'
