@@ -6,7 +6,7 @@ module SensuPluginsApache
   module Version
     MAJOR = 0
     MINOR = 0
-    PATCH = 9
+    PATCH = 10
 
     VER_STRING = [MAJOR, MINOR, PATCH].compact.join('.')
 
