@@ -21,9 +21,11 @@ Gem::Specification.new do |s|
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-apache'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => '',
-                               'development_status' => 'unmaintained',
-                               'production_status'  => 'unstable - testing reccomended'
-                               }
+                               'development_status' => 'active',
+                               'production_status'  => 'unstable - testing reccomended',
+                               'releae_draft'       => 'false',
+                               'release_prerelease' => 'false'
+                              }
   s.name                   = 'sensu-plugins-apache'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'

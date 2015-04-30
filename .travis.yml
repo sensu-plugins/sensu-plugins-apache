@@ -10,7 +10,7 @@ rvm:
 notifications:
   email:
     recipients:
-      - matty@sensu-plugins.io
+      - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
 
