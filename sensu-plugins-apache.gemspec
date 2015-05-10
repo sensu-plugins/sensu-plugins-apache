@@ -1,5 +1,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'date'
 
 if RUBY_VERSION < '2.0.0'
