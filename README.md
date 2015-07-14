@@ -1,6 +1,6 @@
 ## Sensu-Plugins-apache
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-apache.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-apache)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-apache.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-apache)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-apache.svg)](http://badge.fury.io/rb/sensu-plugins-apache)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-apache)
