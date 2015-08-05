@@ -1,5 +1,3 @@
-require 'json'
-
 module SensuPluginsApache
   module Version
     MAJOR = 0
