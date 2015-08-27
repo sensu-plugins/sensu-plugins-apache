@@ -75,7 +75,7 @@ class ApacheMetrics < Sensu::Plugin::Metric::CLI::Graphite
          long: '--secure',
          description: 'Use SSL'
 
-  def acquire_mod_status # rubocop:disable all
+  def acquire_mod_status
     http = Net::HTTP.new(config[:host], config[:port])
     if config[:secure]
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
@@ -94,7 +94,7 @@ class ApacheMetrics < Sensu::Plugin::Metric::CLI::Graphite
     end
   end
 
-  def run # rubocop:disable all
+  def run
     timestamp = Time.now.to_i
     stats = {}
     acquire_mod_status.split("\n").each do |line|
