@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [0.0.5] - 2016-02-18
+### Fixed 
+- cert issue
+
 ## [0.0.4] - 2015-08-04
 ### Changed
 - general cleanup, no code changes
@@ -17,6 +21,12 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Fixed
 - added binstubs
 
-## [0.0.1] - 2015-04-30
+## 0.0.1 - 2015-04-30
 ### Added
 - initial release
+
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.5...HEAD
+[0.0.5]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.4...0.0.5
+[0.0.4]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.3...0.0.4
+[0.0.3]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.2...0.0.3
+[0.0.2]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.1...0.0.2
