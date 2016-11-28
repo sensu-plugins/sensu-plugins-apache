@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [0.0.6] - 2016-11-28
+### Added 
+- check-apache
+
 ## [0.0.5] - 2016-02-18
 ### Fixed 
 - cert issue
