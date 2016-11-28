@@ -10,6 +10,7 @@
 
 ## Files
  * bin/metrics-apache-graphite.rb
+ * bin/check-apache-status.rb
 
 ## Usage
 
