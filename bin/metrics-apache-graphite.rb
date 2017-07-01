@@ -1,5 +1,7 @@
 #! /usr/bin/env ruby
 # encoding: UTF-8
+# frozen_string_literal: true
+
 #
 # apache-graphite
 #
@@ -97,7 +99,7 @@ class ApacheMetrics < Sensu::Plugin::Metric::CLI::Graphite
   def run
     timestamp = Time.now.to_i
     stats = {}
-    acquire_mod_status.split("\n").each do |line|
+    acquire_mod_status.split("\n").each do |line| # rubocop:disable Metrics/BlockLength
       name, value = line.split(': ')
       case name
       when 'Total Accesses'
