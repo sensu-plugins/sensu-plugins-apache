@@ -6,10 +6,11 @@ cache:
 install:
 - bundle install
 rvm:
-- 1.9.3
 - 2.0
 - 2.1
 - 2.2
+- 2.3.0
+- 2.4.1
 notifications:
   email:
     recipients:
@@ -31,3 +32,5 @@ deploy:
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
+    rvm: 2.3.0
+    rvm: 2.4.1
