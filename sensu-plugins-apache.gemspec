@@ -25,7 +25,7 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
   s.require_paths          = ['lib']
-  s.required_ruby_version  = '>= 2.0.0'
+  s.required_ruby_version  = '>= 2.1.0'
   s.summary                = 'Sensu plugins for the apache webserver'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsApache::Version::VER_STRING
@@ -37,7 +37,7 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.add_development_dependency 'pry',                       '~> 0.10'
   s.add_development_dependency 'rake',                      '~> 12.0'
   s.add_development_dependency 'redcarpet',                 '~> 3.2'
-  s.add_development_dependency 'rubocop',                   '~> 0.49.0'
   s.add_development_dependency 'rspec',                     '~> 3.4'
+  s.add_development_dependency 'rubocop',                   '~> 0.51.0'
   s.add_development_dependency 'yard',                      '~> 0.8'
 end
