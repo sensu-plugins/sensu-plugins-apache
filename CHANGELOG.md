@@ -13,6 +13,7 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 
 ### Changed
 - updated Changelog guidelines location (@majormoses)
+- bin/metrics-apache-graphite.rb: remove magic comment for utf8 as that is the default in ruby as of ruby 2.0. See https://github.com/bbatsov/rubocop/issues/4767 for more information (@majormoses)
 
 ### Removed
 - Ruby 1.9.3 from deploy-time testing (@eheydrick)
