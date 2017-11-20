@@ -1,9 +1,19 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
+This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+### Security
+- updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
+
+### Breaking Changes
+- removed < ruby 2.1 support which was pulled as part of security updates (@majormoses)
+
+### Changed
+- updated Changelog guidelines location (@majormoses)
+
 ### Removed
 - Ruby 1.9.3 from deploy-time testing (@eheydrick)
 
