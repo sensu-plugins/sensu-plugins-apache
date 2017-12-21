@@ -5,6 +5,7 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 
 ## [Unreleased]
 
+## [2.0.0] - 2017-12-21
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
 
@@ -46,7 +47,8 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/0.0.5...1.0.0
 [0.0.5]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/0.0.4...0.0.5
 [0.0.4]: https://github.com/sensu-plugins/sensu-plugins-apache/compare/0.0.3...0.0.4
