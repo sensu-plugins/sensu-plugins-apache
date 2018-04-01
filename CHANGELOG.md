@@ -5,6 +5,9 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 
 ## [Unreleased]
 
+### Breaking Changes
+- bumped dependency of `sensu-plugin` to 2.x you can read about it  [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v145---2017-03-07) (@majormoses)
+
 ## [2.0.0] - 2017-12-21
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
