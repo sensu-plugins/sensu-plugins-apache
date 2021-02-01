@@ -1,14 +1,11 @@
 dist: trusty
-sudo: false
+sudo: true
 language: ruby
 cache:
 - bundler
 install:
 - bundle install
 rvm:
-- 2.1
-- 2.2
-- 2.3.0
 - 2.4.1
 notifications:
   email:
@@ -18,16 +15,24 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-apache.gemspec
+- gem install sensu-plugins-apache-*.gem
+before_deploy:
+- bash -c "[ ! -d bonsai/ ] && git clone https://github.com/sensu/sensu-go-bonsai-asset.git bonsai || echo 'bonsai/ exists, skipping git clone'"
 deploy:
-  provider: rubygems
+- provider: rubygems
   api_key:
     secure: Y/Dw7CRApNeJ0ih/4Wx/Ad2/H24GIzKN+c4iJz2ZBEWHL3+s0/9UZfPwOPonJ1RTZBqdJVOvA1s2Bboj4zBh6hUnc8CVfhsanusKt9AkaDs2Swwm6Ed4B+0LQ76YIIspGqEll5Qm1l+KVHZ25ztKyzjLSGIS8VHKJFFwv8tc9Cg=
   gem: sensu-plugins-apache
   on:
     tags: true
-    repo: sensu-plugins/sensu-plugins-apache
     all_branches: true
-    rvm: 2.1
-    rvm: 2.2
-    rvm: 2.3.0
+    rvm: 2.4.1
+    repo: sensu-plugins/sensu-plugins-apache
+- provider: script
+  script: bonsai/ruby-runtime/travis-build-ruby-plugin-assets.sh sensu-plugins-apache
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
     rvm: 2.4.1
