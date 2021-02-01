@@ -6,7 +6,6 @@ cache:
 install:
 - bundle install
 rvm:
-- 2.3.0
 - 2.4.1
 notifications:
   email:
@@ -15,7 +14,7 @@ notifications:
     on_success: change
     on_failure: always
 script:
-- bundle exec rake quick
+- bundle exec rake default
 - gem build sensu-plugins-apache.gemspec
 - gem install sensu-plugins-apache-*.gem
 before_deploy:
@@ -28,7 +27,6 @@ deploy:
   on:
     tags: true
     all_branches: true
-    rvm: 2.3.0
     rvm: 2.4.1
     repo: sensu-plugins/sensu-plugins-apache
 - provider: script
